@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "arca-dsa"
+version = "0.1.0"
+description = "Arca DSA - data structures & algorithms applied to big data and AI, with multi-language examples"
+authors = ["42i-ai <devnull@example.com>"]
+readme = "README.md"
+packages = [{ include = "dsa" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+streamlit = "^1.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.0"
+
+[tool.poetry.scripts]
+# Entry point to run the shopping carts processor via: `poetry run shopping-carts`
+shopping-carts = "dsa.hash.shopping_carts:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

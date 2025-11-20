@@ -1,0 +1,343 @@
+{
+  "metadata": {
+    "generated_at": "2025-11-20T12:00:00Z",
+    "currency": "USD",
+    "count": 30,
+    "notes": "Sample nested shopping cart dataset for promotion rule testing"
+  },
+  "carts": [
+    {
+      "cart_id": "cart-0001",
+      "user_id": "user-1001",
+      "created_at": "2025-11-20T08:15:00Z",
+      "items": [
+        { "product_id": "prod-011", "name": "Notebook", "category": "office", "unit_price": 3.5, "quantity": 2 },
+        { "product_id": "prod-001", "name": "USB-C Cable", "category": "electronics", "unit_price": 9.99, "quantity": 1 },
+        { "product_id": "prod-011", "name": "Notebook", "category": "office", "unit_price": 3.5, "quantity": 3 },
+        { "product_id": "prod-001", "name": "USB-C Cable", "category": "electronics", "unit_price": 9.99, "quantity": 1 }
+      ],
+      "promotion_codes": [],
+      "metadata": { "source": "bulk-import", "tags": ["mobile-accessory"] }
+    },
+    {
+      "cart_id": "cart-0002",
+      "user_id": "user-1002",
+      "created_at": "2025-11-20T08:18:00Z",
+      "items": [
+        { "product_id": "prod-002", "name": "Wireless Mouse", "category": "electronics", "unit_price": 24.99, "quantity": 1 },
+        { "product_id": "prod-003", "name": "Mechanical Keyboard", "category": "electronics", "unit_price": 79.99, "quantity": 1 }
+      ],
+      "promotion_codes": ["PROMO10"],
+      "metadata": { "source": "web", "tags": ["gamer"] }
+    },
+    {
+      "cart_id": "cart-0003",
+      "user_id": "user-1003",
+      "created_at": "2025-11-20T08:20:00Z",
+      "items": [
+        { "product_id": "prod-004", "name": "Organic Bananas (1kg)", "category": "grocery", "unit_price": 1.99, "quantity": 6 },
+        { "product_id": "prod-005", "name": "Olive Oil 500ml", "category": "grocery", "unit_price": 12.5, "quantity": 1 }
+      ],
+      "promotion_codes": ["FREE_SHIP"],
+      "metadata": { "source": "mobile", "tags": ["groceries","perishables"] }
+    },
+    {
+      "cart_id": "cart-0004",
+      "user_id": "user-1004",
+      "created_at": "2025-11-20T08:25:00Z",
+      "items": [
+        { "product_id": "prod-006", "name": "T-Shirt", "category": "clothing", "unit_price": 19.99, "quantity": 3 },
+        { "product_id": "prod-007", "name": "Jeans", "category": "clothing", "unit_price": 49.99, "quantity": 1 }
+      ],
+      "promotion_codes": ["PROMO_B2G1"],
+      "metadata": { "source": "web", "tags": ["apparel"] }
+    },
+    {
+      "cart_id": "cart-0005",
+      "user_id": "user-1005",
+      "created_at": "2025-11-20T08:30:00Z",
+      "items": [
+        { "product_id": "prod-008", "name": "Hammer", "category": "tools", "unit_price": 14.0, "quantity": 2 },
+        { "product_id": "prod-009", "name": "Screwdriver Set", "category": "tools", "unit_price": 22.5, "quantity": 1 }
+      ],
+      "promotion_codes": [],
+      "metadata": { "source": "api", "tags": ["home-improvement"] }
+    },
+    {
+      "cart_id": "cart-0006",
+      "user_id": "user-1006",
+      "created_at": "2025-11-20T08:35:00Z",
+      "items": [
+        { "product_id": "prod-010", "name": "Water Bottle", "category": "sports", "unit_price": 8.5, "quantity": 1 },
+        { "product_id": "prod-010", "name": "Water Bottle", "category": "sports", "unit_price": 8.5, "quantity": 2 },
+        { "product_id": "prod-010", "name": "Water Bottle", "category": "sports", "unit_price": 8.5, "quantity": 1 }
+      ],
+      "promotion_codes": ["PROMO10"],
+      "metadata": { "source": "mobile", "tags": ["hydration"] }
+    },
+    {
+      "cart_id": "cart-0007",
+      "user_id": "user-1007",
+      "created_at": "2025-11-20T08:40:00Z",
+      "items": [
+        { "product_id": "prod-003", "name": "Mechanical Keyboard", "category": "electronics", "unit_price": 79.99, "quantity": 2 }
+      ],
+      "promotion_codes": ["B2G1_KEYBOARD"],
+      "metadata": { "source": "web", "tags": ["workstation","office"] }
+    },
+    {
+      "cart_id": "cart-0008",
+      "user_id": "user-1008",
+      "created_at": "2025-11-20T08:45:00Z",
+      "items": [
+        { "product_id": "prod-012", "name": "Novel: The Long Road", "category": "books", "unit_price": 14.99, "quantity": 1 },
+        { "product_id": "prod-013", "name": "Notebook", "category": "office", "unit_price": 4.0, "quantity": 3 }
+      ],
+      "promotion_codes": [],
+      "metadata": { "source": "gift", "tags": ["books"] }
+    },
+    {
+      "cart_id": "cart-0009",
+      "user_id": "user-1009",
+      "created_at": "2025-11-20T08:50:00Z",
+      "items": [
+        { "product_id": "prod-005", "name": "Olive Oil 500ml", "category": "grocery", "unit_price": 12.5, "quantity": 2 },
+        { "product_id": "prod-014", "name": "Pasta 1kg", "category": "grocery", "unit_price": 2.5, "quantity": 4 }
+      ],
+      "promotion_codes": ["FREE_SHIP"],
+      "metadata": { "source": "bulk-order", "tags": ["pantry"] }
+    },
+    {
+      "cart_id": "cart-0010",
+      "user_id": "user-1010",
+      "created_at": "2025-11-20T08:55:00Z",
+      "items": [
+        { "product_id": "prod-015", "name": "Bluetooth Speaker", "category": "electronics", "unit_price": 59.99, "quantity": 1 },
+        { "product_id": "prod-001", "name": "USB-C Cable", "category": "electronics", "unit_price": 9.99, "quantity": 1 },
+        { "product_id": "prod-001", "name": "USB-C Cable", "category": "electronics", "unit_price": 9.99, "quantity": 2 }
+      ],
+      "promotion_codes": ["PROMO10","FREE_SHIP"],
+      "metadata": { "source": "web", "tags": ["audio"] }
+    },
+    {
+      "cart_id": "cart-0011",
+      "user_id": "user-1011",
+      "created_at": "2025-11-20T09:00:00Z",
+      "items": [
+        { "product_id": "prod-016", "name": "Running Shoes", "category": "sports", "unit_price": 89.5, "quantity": 1 },
+        { "product_id": "prod-010", "name": "Water Bottle", "category": "sports", "unit_price": 8.5, "quantity": 2 }
+      ],
+      "promotion_codes": [],
+      "metadata": { "source": "mobile", "tags": ["fitness"] }
+    },
+    {
+      "cart_id": "cart-0012",
+      "user_id": "user-1012",
+      "created_at": "2025-11-20T09:05:00Z",
+      "items": [
+        { "product_id": "prod-004", "name": "Organic Bananas (1kg)", "category": "grocery", "unit_price": 1.99, "quantity": 12 }
+      ],
+      "promotion_codes": ["PROMO_GROCERY_5"],
+      "metadata": { "source": "api", "tags": ["bulk","grocery"] }
+    },
+    {
+      "cart_id": "cart-0013",
+      "user_id": "user-1013",
+      "created_at": "2025-11-20T09:10:00Z",
+      "items": [
+        { "product_id": "prod-007", "name": "Jeans", "category": "clothing", "unit_price": 49.99, "quantity": 2 },
+        { "product_id": "prod-006", "name": "T-Shirt", "category": "clothing", "unit_price": 19.99, "quantity": 1 }
+      ],
+      "promotion_codes": ["SUMMER_SALE"],
+      "metadata": { "source": "web", "tags": ["apparel"] }
+    },
+    {
+      "cart_id": "cart-0014",
+      "user_id": "user-1014",
+      "created_at": "2025-11-20T09:15:00Z",
+      "items": [
+        { "product_id": "prod-017", "name": "Electric Kettle", "category": "home-appliance", "unit_price": 29.99, "quantity": 1 },
+        { "product_id": "prod-018", "name": "Coffee Filters", "category": "home", "unit_price": 5.0, "quantity": 2 }
+      ],
+      "promotion_codes": ["PROMO10"],
+      "metadata": { "source": "gift", "tags": ["kitchen"] }
+    },
+    {
+      "cart_id": "cart-0015",
+      "user_id": "user-1015",
+      "created_at": "2025-11-20T09:20:00Z",
+      "items": [
+        { "product_id": "prod-019", "name": "Yoga Mat", "category": "sports", "unit_price": 20.0, "quantity": 1 },
+        { "product_id": "prod-020", "name": "Resistance Bands", "category": "sports", "unit_price": 15.0, "quantity": 2 }
+      ],
+      "promotion_codes": [],
+      "metadata": { "source": "mobile", "tags": ["wellness"] }
+    },
+    {
+      "cart_id": "cart-0016",
+      "user_id": "user-1016",
+      "created_at": "2025-11-20T09:25:00Z",
+      "items": [
+        { "product_id": "prod-001", "name": "USB-C Cable", "category": "electronics", "unit_price": 9.99, "quantity": 1 },
+        { "product_id": "prod-003", "name": "Mechanical Keyboard", "category": "electronics", "unit_price": 79.99, "quantity": 1 },
+        { "product_id": "prod-001", "name": "USB-C Cable", "category": "electronics", "unit_price": 9.99, "quantity": 1 },
+        { "product_id": "prod-002", "name": "Wireless Mouse", "category": "electronics", "unit_price": 24.99, "quantity": 1 }
+      ],
+      "promotion_codes": ["BUNDLE_ELEC_5"],
+      "metadata": { "source": "web", "tags": ["bundle"] }
+    },
+    {
+      "cart_id": "cart-0017",
+      "user_id": "user-1017",
+      "created_at": "2025-11-20T09:30:00Z",
+      "items": [
+        { "product_id": "prod-014", "name": "Pasta 1kg", "category": "grocery", "unit_price": 2.5, "quantity": 10 }
+      ],
+      "promotion_codes": ["PROMO10"],
+      "metadata": { "source": "api", "tags": ["pantry"] }
+    },
+    {
+      "cart_id": "cart-0018",
+      "user_id": "user-1018",
+      "created_at": "2025-11-20T09:35:00Z",
+      "items": [
+        { "product_id": "prod-021", "name": "Board Game", "category": "toys", "unit_price": 29.99, "quantity": 1 },
+        { "product_id": "prod-012", "name": "Novel: The Long Road", "category": "books", "unit_price": 14.99, "quantity": 2 }
+      ],
+      "promotion_codes": [],
+      "metadata": { "source": "gift", "tags": ["family"] }
+    },
+    {
+      "cart_id": "cart-0019",
+      "user_id": "user-1019",
+      "created_at": "2025-11-20T09:40:00Z",
+      "items": [
+        { "product_id": "prod-022", "name": "Desktop Monitor", "category": "electronics", "unit_price": 129.99, "quantity": 1 }
+      ],
+      "promotion_codes": ["PROMO_15_OFF"],
+      "metadata": { "source": "web", "tags": ["office"] }
+    },
+    {
+      "cart_id": "cart-0020",
+      "user_id": "user-1020",
+      "created_at": "2025-11-20T09:45:00Z",
+      "items": [
+        { "product_id": "prod-023", "name": "Desk Lamp", "category": "home", "unit_price": 18.0, "quantity": 2 },
+        { "product_id": "prod-013", "name": "Notebook", "category": "office", "unit_price": 4.0, "quantity": 6 }
+      ],
+      "promotion_codes": ["FREE_SHIP"],
+      "metadata": { "source": "api", "tags": ["home-office"] }
+    },
+    {
+      "cart_id": "cart-0021",
+      "user_id": "user-1021",
+      "created_at": "2025-11-20T09:50:00Z",
+      "items": [
+        { "product_id": "prod-024", "name": "Cookbook: Quick Meals", "category": "books", "unit_price": 22.0, "quantity": 1 },
+        { "product_id": "prod-005", "name": "Olive Oil 500ml", "category": "grocery", "unit_price": 12.5, "quantity": 1 }
+      ],
+      "promotion_codes": [],
+      "metadata": { "source": "mobile", "tags": ["kitchen"] }
+    },
+    {
+      "cart_id": "cart-0022",
+      "user_id": "user-1022",
+      "created_at": "2025-11-20T09:55:00Z",
+      "items": [
+        { "product_id": "prod-025", "name": "Flashlight", "category": "tools", "unit_price": 11.0, "quantity": 3 }
+      ],
+      "promotion_codes": ["PROMO10"],
+      "metadata": { "source": "web", "tags": ["outdoors"] }
+    },
+    {
+      "cart_id": "cart-0023",
+      "user_id": "user-1023",
+      "created_at": "2025-11-20T10:00:00Z",
+      "items": [
+        { "product_id": "prod-006", "name": "T-Shirt", "category": "clothing", "unit_price": 19.99, "quantity": 5 }
+      ],
+      "promotion_codes": ["PROMO_BULK_CLOTH"],
+      "metadata": { "source": "api", "tags": ["wholesale"] }
+    },
+    {
+      "cart_id": "cart-0024",
+      "user_id": "user-1024",
+      "created_at": "2025-11-20T10:05:00Z",
+      "items": [
+        { "product_id": "prod-015", "name": "Bluetooth Speaker", "category": "electronics", "unit_price": 59.99, "quantity": 2 },
+        { "product_id": "prod-001", "name": "USB-C Cable", "category": "electronics", "unit_price": 9.99, "quantity": 1 }
+      ],
+      "promotion_codes": ["BUNDLE_ELEC_5"],
+      "metadata": { "source": "gift", "tags": ["audio"] }
+    },
+    {
+      "cart_id": "cart-0025",
+      "user_id": "user-1025",
+      "created_at": "2025-11-20T10:10:00Z",
+      "items": [
+        { "product_id": "prod-026", "name": "Baby Diapers (Pack)", "category": "baby", "unit_price": 24.99, "quantity": 1 },
+        { "product_id": "prod-027", "name": "Baby Wipes", "category": "baby", "unit_price": 6.99, "quantity": 3 }
+      ],
+      "promotion_codes": ["PROMO10"],
+      "metadata": { "source": "mobile", "tags": ["baby"] }
+    },
+    {
+      "cart_id": "cart-0026",
+      "user_id": "user-1026",
+      "created_at": "2025-11-20T10:15:00Z",
+      "items": [
+        { "product_id": "prod-028", "name": "Garden Gloves", "category": "garden", "unit_price": 7.5, "quantity": 2 },
+        { "product_id": "prod-029", "name": "Seeds Pack", "category": "garden", "unit_price": 3.0, "quantity": 4 }
+      ],
+      "promotion_codes": [],
+      "metadata": { "source": "web", "tags": ["garden"] }
+    },
+    {
+      "cart_id": "cart-0027",
+      "user_id": "user-1027",
+      "created_at": "2025-11-20T10:20:00Z",
+      "items": [
+        { "product_id": "prod-022", "name": "Desktop Monitor", "category": "electronics", "unit_price": 129.99, "quantity": 2 }
+      ],
+      "promotion_codes": ["PROMO_15_OFF"],
+      "metadata": { "source": "api", "tags": ["office"] }
+    },
+    {
+      "cart_id": "cart-0028",
+      "user_id": "user-1028",
+      "created_at": "2025-11-20T10:25:00Z",
+      "items": [
+        { "product_id": "prod-030", "name": "Sunglasses", "category": "accessories", "unit_price": 39.99, "quantity": 1 },
+        { "product_id": "prod-006", "name": "T-Shirt", "category": "clothing", "unit_price": 19.99, "quantity": 2 }
+      ],
+      "promotion_codes": [],
+      "metadata": { "source": "web", "tags": ["summer"] }
+    },
+    {
+      "cart_id": "cart-0029",
+      "user_id": "user-1029",
+      "created_at": "2025-11-20T10:30:00Z",
+      "items": [
+        { "product_id": "prod-031", "name": "Smart Plug", "category": "electronics", "unit_price": 17.99, "quantity": 1 },
+        { "product_id": "prod-031", "name": "Smart Plug", "category": "electronics", "unit_price": 17.99, "quantity": 1 },
+        { "product_id": "prod-031", "name": "Smart Plug", "category": "electronics", "unit_price": 17.99, "quantity": 1 }
+      ],
+      "promotion_codes": ["PROMO10","FREE_SHIP"],
+      "metadata": { "source": "mobile", "tags": ["smart-home"] }
+    },
+    {
+      "cart_id": "cart-0030",
+      "user_id": "user-1030",
+      "created_at": "2025-11-20T10:35:00Z",
+      "items": [
+        { "product_id": "prod-014", "name": "Pasta 1kg", "category": "grocery", "unit_price": 2.5, "quantity": 5 },
+        { "product_id": "prod-014", "name": "Pasta 1kg", "category": "grocery", "unit_price": 2.5, "quantity": 5 },
+        { "product_id": "prod-014", "name": "Pasta 1kg", "category": "grocery", "unit_price": 2.5, "quantity": 5 },
+        { "product_id": "prod-014", "name": "Pasta 1kg", "category": "grocery", "unit_price": 2.5, "quantity": 5 },
+        { "product_id": "prod-005", "name": "Olive Oil 500ml", "category": "grocery", "unit_price": 12.5, "quantity": 2 }
+      ],
+      "promotion_codes": ["GROCERY_BULK_10"],
+      "metadata": { "source": "bulk-import", "tags": ["pantry","bulk"] }
+    }
+  ]
+}

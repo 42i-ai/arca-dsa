@@ -61,10 +61,10 @@ def split_order(order: dict, inventory: dict) -> Any:
         quantity_need = item_order.get("qty")
         for warehouse in sorted_wh:
             quantity_shipment = 0
-            if warehouse[1].get(sku) >= 0:
+            if warehouse[1].get(sku, 0) >= 0:
                 # 3
                 # 8
-                avaliable = warehouse[1].get(sku)
+                avaliable = warehouse[1].get(sku, 0)
                 # 3 > 10
                 # 7 < 8
                 if avaliable >= quantity_need:
@@ -75,10 +75,13 @@ def split_order(order: dict, inventory: dict) -> Any:
                     quantity_need -= avaliable
                     quantity_shipment = avaliable
                 order_with_warehouse["items"].append({
-                    "sku": item_order.get(sku), "qty": quantity_shipment, "warehouse_id": warehouse[0]})
+                    "sku": sku, "qty": quantity_shipment, "warehouse_id": warehouse[0]})
                 if (quantity_need == 0):
                     # quando os itens já estão completos vai para o próximo item
                     break
+        if quantity_need > 0:
+            raise Exception(
+                f"Estoque insuficiente para o item {sku}. Faltam {quantity_need} unidades.")
     return order_with_warehouse
 
 
